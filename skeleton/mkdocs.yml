@@ -1,0 +1,17 @@
+site_name: "${{ values.serviceName }} Docs"
+repo_url: https://github.com/${{ values.destination.owner + "/" + values.destination.repo }}
+site_description: This is a template repository for Python projects that use Poetry for their dependency management.
+site_author: ${{ values.owner | dump }}
+edit_uri: edit/main/docs/
+repo_name: ${{ values.destination.owner + "/" + values.destination.repo }}
+
+nav:
+  - Home: index.md
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: [ app ]
