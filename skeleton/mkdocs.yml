@@ -10,6 +10,7 @@ nav:
 
 plugins:
   - search
+  - techdocs-core
   - mkdocstrings:
       default_handler: python
       handlers:
