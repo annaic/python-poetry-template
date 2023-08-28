@@ -3,7 +3,7 @@ kind: Template
 metadata:
   name: python-poetry-template
   title: Python app with Github Actions
-  description: Create a Python app ice with Github Actions workflows
+  description: Create a Python application based on Poetry
   tags:
     - recommended
 spec:
