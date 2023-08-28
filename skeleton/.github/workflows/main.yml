@@ -11,9 +11,10 @@ jobs:
   quality:
     runs-on: ubuntu-latest
     steps:
+      {% raw %}
       - name: Check out
         uses: actions/checkout@v3
-      {% raw %}
+
       - uses: actions/cache@v3
         with:
           path: ~/.cache/pre-commit
