@@ -9,5 +9,10 @@ nav:
   - Home: index.md
 
 plugins:
+  - search
   - techdocs-core
-
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: [ app ]
