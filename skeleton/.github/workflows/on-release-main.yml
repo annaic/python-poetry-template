@@ -6,7 +6,7 @@ on:
     branches: [main]
 
 jobs:
-  
+
   deploy-docs:
     runs-on: ubuntu-latest
     steps:
@@ -17,5 +17,4 @@ jobs:
         uses: ./.github/actions/setup-poetry-env
 
       - name: Deploy documentation
-        run: poetry run mkdocs gh-deploy --force
-  
+        run: poetry run mkdocs -f ./mkdocs-build.yml gh-deploy --force
